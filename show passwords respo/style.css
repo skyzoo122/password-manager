@@ -1,0 +1,165 @@
+:root {
+  --light-bg: #383c44;
+  --select-light-bg: #61646a;
+  --color-sidebar: #b9babd;
+  --dark-bg: #282d34;
+  --dark-input: #151922;
+  --border-dbg: #54585f;
+  --req: #95979c;
+  --plus: #43a5a1;
+}
+.container {
+  min-width: 90%;
+}
+.header-content {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+.header-content button {
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50px;
+  width: 90px;
+  border: none;
+  height: 35px;
+  background-color: var(--color-not);
+  border: solid white 1px;
+  color: white;
+  margin-left: 10px;
+}
+.header-content button:hover {
+  background-color: #6463639a;
+}
+
+.passwords {
+  width: 100%;
+}
+.passwords-header {
+  width: 100%;
+  display: flex;
+}
+.d1 {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--color-sidebar);
+  padding-bottom: 10px;
+}
+.s1,
+.checkbox-part {
+  width: 50px;
+}
+.checkbox-part {
+  display: flex;
+}
+.passwords-header p {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.other-side {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid var(--select-light-bg);
+  padding-block: 10px;
+}
+.passwords-item:nth-child(1) .other-side {
+  border: none;
+}
+.title-e {
+  padding-left: 5px;
+}
+.last-edited-e,
+.title-e {
+  width: 50%;
+}
+.img-user-email {
+  width: 50%;
+  display: flex;
+  padding-right: 15px;
+}
+
+.img-user-email p {
+  color: var(--req);
+  font-size: 14px;
+}
+.e-img {
+  width: 50px;
+  height: 50px;
+  margin-inline: 10px;
+  border-radius: 8px;
+}
+.title-c {
+  overflow: hidden;
+}
+.title-c h3 {
+  color: white;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.title-c p {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.last-edited-c {
+  width: 50%;
+  color: var(--req);
+  display: flex;
+  align-items: center;
+}
+.passwords-item {
+  display: flex;
+  width: 100%;
+}
+.passwords-item:hover #checkbox-item {
+  opacity: 1;
+}
+.checkbox-part {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"],
+#checkbox-item {
+  position: relative;
+  appearance: none;
+  border: 1px solid var(--color-sidebar);
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#checkbox-item {
+  opacity: 0;
+}
+
+#checkbox-item:checked::before,
+input[type="checkbox"]:checked::before {
+  position: absolute;
+  content: "\f00c"; /* Replace with the Unicode character of the Font Awesome icon you want to use */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  margin-right: 5px;
+  color: var(--color-sidebar);
+  top: -2px;
+  left: 2px;
+}
+.checkbox-part #checkbox-item:checked {
+  opacity: 1;
+}
+@media (max-width: 576px) {
+  .container {
+    min-width: 80%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
