@@ -2,8 +2,8 @@ const sideBtn = document.querySelector(".toggle");
 const sideBar = document.querySelector("aside");
 const colseIcon = document.querySelector(".close-toggle");
 const openIcon = document.querySelector(".open-toggle");
-let open = false;
-
+const Menu = document.querySelector(".profile-menu-drp");
+const profilebtn = document.querySelector(".profile-btn");
 function categoToggle() {
   const catego = document.querySelector(".liste-catego-drp");
   catego.classList.toggle("active-categories");
@@ -13,7 +13,6 @@ function folderToggle() {
   catego.classList.toggle("active-categories");
 }
 function menuToggle() {
-  const Menu = document.querySelector(".profile-menu-drp");
   Menu.classList.toggle("active-profile-menu");
 }
 
@@ -26,5 +25,10 @@ document.addEventListener("click", (e) => {
     sideBar.classList.remove("active-sidebar");
     colseIcon.classList.add("active-toggle");
     openIcon.classList.remove("active-toggle");
+  }
+  if (profilebtn.contains(e.target)) {
+    Menu.classList.toggle("active-profile-menu");
+  } else if (!profilebtn.contains(e.target)) {
+    Menu.classList.add("active-profile-menu");
   }
 });

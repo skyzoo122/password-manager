@@ -11,7 +11,6 @@
 body {
   background-color: var(--dark-bg);
 }
-/* aside style */
 
 aside {
   height: 100%;
@@ -145,14 +144,11 @@ aside .search-part {
   color: var(--color-sidebar);
   text-decoration: none;
 }
-/* first dropdown end */
-/* main-contant */
 .main-content {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   position: relative;
 }
 .toggle {
@@ -172,7 +168,6 @@ aside .search-part {
 .active-toggle {
   display: none;
 }
-
 @media (max-width: 576px) {
   html {
     min-width: 400px;
@@ -187,7 +182,6 @@ aside .search-part {
     display: block;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   aside {
     min-width: 180px;
