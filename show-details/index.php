@@ -84,8 +84,8 @@
       <div class="container">
         <div class="head-btn"></div>
         <div class="back-and-edite">
-          <div><a href="./../show-passwords/index.html">Back</a></div>
-          <div><a href="./../edite-password/index.html">Edite</a></div>
+          <div><a href="./../show-passwords/">Back</a></div>
+          <div><a href="./../edite-password/">Edite</a></div>
         </div>
         <div class="card">
           <div class="img-d">

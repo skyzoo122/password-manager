@@ -34,7 +34,7 @@
       </form>
       <div class="have-acc">
         <p>you don't have an account ?</p>
-        <a href="./../sign-in/index.html">Sign in here</a>
+        <a href="./../sign-in/">Sign in here</a>
       </div>
     </div>
   </body>
