@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+require_once("../includs/init.php");
+require_once("../includs/aut-user.php");
+$ah  = explode("/", $_SERVER['PHP_SELF']);
+$_SESSION['last_file']  = "../" . $ah[2] . "/";
+?>
 
 <head>
   <meta charset="UTF-8" />
@@ -31,7 +37,7 @@
               <li><i data-feather="settings"></i><a href="">Settings</a></li>
               <li><i data-feather="inbox"></i><a href="">Inbox</a></li>
               <li><i data-feather="help-circle"></i><a href="">Help</a></li>
-              <li><i data-feather="log-out"></i><a href="">Logout</a></li>
+              <li><i data-feather="log-out"></i><a href="./../logout.php">Logout</a></li>
             </ul>
           </div>
         </span>
